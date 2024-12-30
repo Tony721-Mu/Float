@@ -1,49 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-<style>
-    body{
-        background-color: rgb(165, 97, 9);
-    }
-img.a {
-  vertical-align: baseline;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة HTML كاملة</title>
+    <style>
+        .parent {
+            background-color: #54ff84dd;
+            width: 800px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 200px;
+            overflow: auto; /* است خدام clearfix */
+        }
 
-img.b {
-  vertical-align: text-top;
-}
+        .oneInner {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #d217174d;
+            text-align: center;
+            width: 760px;
+            float: left;
+            height: 40px;
+            margin-left: 20px;
+            line-height: 40px; /* لتوسيط النص عموديًا */
+        }
 
-img.c {
-  vertical-align: text-bottom;
-}
+        .twoInner-1, .twoInner-2, .twoInner-3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #dddddd;
+            text-align: center;
+            float: left;
+            height: 40px;
+            line-height: 40px; /* لتوسيط النص عموديًا */
+            width: calc((720px) / 3);
+            margin-left: 20px;
+        }
 
-img.d {
-  vertical-align: sub;
-}
+        .threeInner-1, .threeInner-2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #dddddd;
+            text-align: center;
+            float: left;
+            height: 40px;
+            line-height: 40px; /* لتوسيط النص عموديًا */
+            width: calc((740px) / 2);
+            margin-left: 20px;
+        }
 
-img.e {
-  vertical-align: super;
-}
-</style>
+        .fourInner-1, .fourInner-2, .fourInner-3, .fourInner-4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #dddddd;
+            text-align: center;
+            float: left;
+            height: 40px;
+            line-height: 40px; /* لتوسيط النص عموديًا */
+            width: calc((700px) / 4);
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-
-<h1>The vertical-align Property</h1>
-
-<h2>vertical-align: baseline (default):</h2>
-<p>An <img class="a" src="https://placehold.co/10x10" > image with a default alignment.</p> 
-
-<h2>vertical-align: text-top:</h2>
-<p>An <img class="b" src="https://placehold.co/10x10" > image with a text-top alignment.</p> 
-
-<h2>vertical-align: text-bottom:</h2>
-<p>An <img class="c" src="https://placehold.co/10x10"> image with a text-bottom alignment.</p>
-
-<h2>vertical-align: sub:</h2>
-<p>An <img class="d" src="https://placehold.co/10x10"> image with a sub alignment.</p> 
-
-<h2>vertical-align: sup:</h2>
-<p>An <img class="e" src="https://placehold.co/10x10"> image with a super alignment.</p>
-
+    <div class="parent clearfix">
+        <div class="oneInner">Full Width</div>
+        <div class="twoInner-1">1/3</div>
+        <div class="twoInner-2">1/3</div>
+        <div class="twoInner-3">1/3</div>
+        <div class="threeInner-1">1/2</div>
+        <div class="threeInner-2">1/2</div>
+        <div class="fourInner-1">1/4</div>
+        <div class="fourInner-2">1/4</div>
+        <div class="fourInner-3">1/4</div>
+        <div class="fourInner-4">1/4</div>
+    </div>
 </body>
 </html>
